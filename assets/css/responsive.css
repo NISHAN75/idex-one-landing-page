@@ -133,6 +133,16 @@ Version: 1.0
     }
     /* product-features section */
 
+    /* industry-solution section */
+    .industry-slider-section .btn-1 {
+        bottom: 50px;
+        left: 5%;
+    }
+    .scroll-btn {
+        bottom: 50px;
+    }
+    /* industry-solution section */
+
      
 
 
@@ -289,6 +299,18 @@ h3 {
     transform: translateX(-50%);
 }
 /* contact-form-section */
+
+/* industry-solution section */
+.industry-slider-section .btn-1 {
+    bottom: 134px;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 0.5px;
+    min-width: 200px;
+    padding: 6px 10px;
+}
+
+/* industry-solution section */
 
 
 }

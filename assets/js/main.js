@@ -1,7 +1,7 @@
 (function ($) {
-	$(document).ready(function () {
-		
-		// offcanvas humbarger
+    $(document).ready(function () {
+
+        // offcanvas humbarger
         let offcanvasElement = $('.header-offcanvas');
         offcanvasElement.on('show.bs.offcanvas', function () {
             $('.humbarger-btn').addClass('open');
@@ -26,7 +26,7 @@
             });
         });
 
-		// Magnific popup
+        // Magnific popup
         $(document).on('click', '.trigger-popup', function (e) {
             e.preventDefault();
             $.magnificPopup.open({
@@ -86,7 +86,7 @@
             lenis.scrollTo(0)
         });
 
-        
+
 
         // OverlayScrollbars
         const {
@@ -108,34 +108,27 @@
         });
 
 
-    gsap.registerPlugin(ScrollTrigger);
-    let tl = gsap.timeline();
-    // portfolio panel
-	let otherSections = document.querySelectorAll('.industry-slider-item ')
+        gsap.registerPlugin(ScrollTrigger);
+        let tl = gsap.timeline();
+        let otherSections = document.querySelectorAll('.industry-slider-item ')
 
-	otherSections.forEach((section, index) => {
+        otherSections.forEach((section, index) => {
+            tl.to(section, {
+                scrollTrigger: {
+                    trigger: section,
+                    pin: section,
+                    scrub: false,
+                    start: 'top 0%',
+                    end: "bottom 100%",
+                    endTrigger: '.slider-wrapper',
+                    pinSpacing: false,
+                    markers: false,
+                },
+            })
+        })
 
-		gsap.set(otherSections, {
-			scale: 1
-		});
 
-		tl.to(section, {
-			scale: .8,
-			scrollTrigger: {
-				trigger: section,
-				pin: section,
-				scrub: 1,
-				start: 'top 10%',
-				end: "bottom 100%",
-				endTrigger: '.industry-slider-section',
-				pinSpacing: false,
-				markers: false,
-			},
-		})
-	})
-    
-    
-    
+
 
 
         // lenis
@@ -161,5 +154,5 @@
         // lenis
 
 
-	});
+    });
 })(jQuery);
