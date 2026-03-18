@@ -26,6 +26,17 @@ Version: 1.0
 /* max-width 1399 */
 @media (max-width: 1399.98px) {
     
+
+/* capabilities-showcase section */
+.tech-stack-area  .col {
+    flex: 1 0 50%;
+    max-width: 500px;
+	margin:0;
+}
+.tech-stack-area .col:nth-child(even) {
+    margin-top: 0;
+}
+/* capabilities-showcase section */
 }
 
 /* max-width 1199 */
@@ -36,6 +47,8 @@ Version: 1.0
     --bs-gutter-x: 30px;
 }
 /* partnership-benefits section */     
+
+
 
 
 }
@@ -88,6 +101,44 @@ h6 {
 }
 /* services-overview section */
 
+/* capabilities-showcase section */
+.capabilities-showcase-area {
+    padding: 70px 0 35px;
+}
+.tech-stack-area  .col {
+    flex: 1 0 100%;
+    max-width: 500px;
+}
+.tech-stack-area {
+    padding-bottom: 30px;
+}
+.tech-stack-area h2{
+	margin-bottom: 20px;
+}
+.client-logo-itmes {
+    gap: 10px;
+}
+.client-logo-wrapper .individual-services-items {
+    margin-top: 40px;
+    padding: 35px 25px;
+}
+/* capabilities-showcase section */
+
+/* expertise section */
+.expertise-area .section-title-wrapper  h2 {
+    margin-bottom: 20px;
+}
+.solution-section {
+    margin-top: 30px;
+}
+.solution-section .table tbody td ,
+.solution-section .table th {
+    padding: 20px 15px;
+    font-size: 16px;
+}
+
+/* expertise section */
+
 
 }
 
@@ -114,6 +165,12 @@ h4 {
 h5 {
 	font-size: 24px;
 }
+
+/* capabilities-showcase section */
+.tech-stack-area  .col {
+    max-width: 100%;
+}
+/* capabilities-showcase section */
 
 
 }

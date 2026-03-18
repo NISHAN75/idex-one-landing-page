@@ -506,6 +506,7 @@ h6 {
 /* services-overview section */
 
 /* partnership-benefits section */
+.expertise-area ,
 .partnership-benefits-area {
     background: radial-gradient(184.72% 92.8% at 0% 100%, rgba(170, 55, 254, 0.35) 0%, rgba(76, 166, 255, 0.17) 50%, rgba(255, 255, 255, 0.00) 100%), #FFF;
 }
@@ -519,6 +520,8 @@ h6 {
 .partnership-benefits-items {
     margin-top: 65px;
 }
+/* span different color  */
+.expertise-area .section-title-wrapper  h2 span ,
 .partnership-benefits-area h2 span {
     color: #AA37FE;
 }
@@ -533,6 +536,8 @@ h6 {
     margin-top: 30px;
 }
 /* font size 20px */
+.expertise-area .section-title-wrapper p ,
+.solution-section .table th ,
 .partnership-benefits-item-content p{
 	font-size: 20px;
 }
@@ -546,22 +551,34 @@ h6 {
     background: radial-gradient(173.22% 92.75% at 102.53% 103.72%, rgba(170, 55, 254, 0.35) 0%, rgba(76, 166, 255, 0.17) 50%, rgba(255, 255, 255, 0.00) 100%), #051D39;
     padding: 128px 0 39px;
 }
+.capabilities-bg{
+    z-index: 1;
+    opacity: 0.35;
+}
+.tech-stack-area {
+    padding-bottom: 80px;
+}
+
 .tech-stack-area .container {
     max-width: 1230px;
+}
+.tech-stack-area h2{
+    margin-bottom: 64px;
 }
 .tech-stack-area .row {
     --bs-gutter-x: 0;
 }
-
-.gradient-border-bottom::before{
-	content: "";
-	position: absolute;
-	left: -54px;
-	bottom: 0;
-	height: 2px;
-	width: calc(100% + 108px);
-	background: linear-gradient(90deg, rgba(76, 166, 255, 0.00) 0%, #4CA6FF 50%, #AA37FE 75%, rgba(170, 55, 254, 0.00) 100%);
-	z-index: 1;
+.gradient-border-bottom::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(76, 166, 255, 0.00) 0%, #4CA6FF 50%, #AA37FE 75%, rgba(170, 55, 254, 0.00) 100%);
+    z-index: 1;
+    max-width: 1366px;
+    transform: translateX(-50%);
 }
 .tech-stack-area .col:nth-child(even) {
     margin-top: 140px;
@@ -581,11 +598,68 @@ h6 {
 	max-width: 1276px;
 }
 .client-logo-wrapper .individual-services-items {
-    margin-top: 40px;
+    margin-top: 83px;
     padding: 52px 73px;
 }
 .client-logo-itmes{
     gap: 31px;
 }
 /* capabilities-showcase section */
+
+/* expertise section */
+.expertise-area .section-title-wrapper .container {
+    max-width: 865px;
+}
+.expertise-area .section-title-wrapper  h2 {
+    margin-bottom: 30px;
+}
+.expertise-area .section-title-wrapper p{
+    line-height: 1.25;
+}
+.solution-section {
+    margin-top: 50px;
+}
+.solution-section .container {
+    max-width: 1362px;
+}
+.solution-section .table-responsive {
+    border-radius: 16px;
+}
+.solution-section .table {
+    border-radius: 16px;
+    margin: 0;
+    box-shadow: 0 20px 25px -5px rgba(76, 166, 255, 0.25), 0 8px 10px -6px rgba(7, 38, 75, 0.25);
+    min-width: 500px;
+}
+.solution-section .table th {
+    background: #0D1931;
+    padding: 24px 32px;
+    color: #FFFFFF;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.011px;
+    text-transform: uppercase;
+    border-right: 1px solid #314158;
+}
+.solution-section .table th:last-child{
+    border-right: 0;
+}
+.solution-section .table tbody td{
+    color: #0F172B;
+    font-size: 18px;
+    line-height: 1.44;
+    letter-spacing: -0.312px;
+    padding: 24px 32px;
+    border-right: 1px solid #E2E8F0;
+}
+.solution-section .table tbody tr{
+    border-bottom: 1px solid #E2E8F0;
+}
+.solution-section .table tbody tr:last-child{
+    border-bottom: 0;
+}
+.solution-section .table tbody td:last-child{
+    border-right: 0;
+}
+/* expertise section */
 
